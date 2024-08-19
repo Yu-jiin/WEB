@@ -3,18 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 16px;
+            color: #333333;
+        }
+        .container {
+            background-color: #F0F0F0;
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-bottom: 20px;
+            padding-right: 20px;
+        }
+        .parent {
+            font-weight: bold;
+            border: 1px solid black;
+            margin-bottom: 20px;
+        }
+        .child {
+            color: red;
+            background-color: skyblue;
+            padding-left: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 10px;
+        }
+        .grandchild {
+            font-style: italic;
+            border: 1px dotted red;
+        }
+    </style>
     <title>Document</title>
 </head>
 <body>
-    <div>
-        <div>
+    <div class="container">
+        <div class="parent">
             <h1>부모 요소 텍스트</h1>
             <p>부모 요소의 텍스트입니다.</p>
-        </div>
-        <div>
-            <h2>자식 요소</h2>
-            <p>자식 요소의 텍스트입니다</p>
-            <span>손자 요소의 텍스트입니다.</span>
+            <div class="child">
+                <h2>자식 요소</h2>
+                <p>자식 요소의 텍스트입니다</p>
+                <span class="grandchild">손자 요소의 텍스트입니다.</span>
+            </div>
         </div>
     </div>
 </body>
