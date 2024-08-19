@@ -5,6 +5,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    * {
+      color: red;
+    }
+
+    h2 {
+      color: orange;
+    }
+
+    h3, h4 {
+      color: blue
+    }
+
+    .green{
+      color: green;
+    }
+
+    #purple {
+      color: purple;
+    }
+
+    /* 자식 결합자 */
+    .green > span {
+      font-size: 50px;
+    }
+    /*  자손 결합자 */
+    .green li {
+      color: pink;
+    }
+  </style>
 </head>
 
 <body>
@@ -28,3 +58,15 @@
 </body>
 
 </html>
+
+<!-- 
+  클래스 선택자 = #purple
+  id 선택자 = .green
+ -->
+ <!-- 
+  명시도 가장 높은 것 
+  !important
+  inline 스타일
+  선택자 (id > class > 요소)
+  코드 선언 순서 
+  -->
