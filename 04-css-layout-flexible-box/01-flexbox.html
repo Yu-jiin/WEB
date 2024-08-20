@@ -9,26 +9,29 @@
     .container {
       height: 500px;
       border: 1px solid black;
-      /* display: flex; */
-      /* flex-direction: row; */
+      display: flex;
+      flex-direction: row;
       /* flex-direction: column; */
       /* flex-direction: row-reverse; */
       /* flex-direction: column-reverse; */
+      /* reverse = 순서를 뒤바꿈 혁신이다. */
 
-      /* flex-wrap: nowrap; */
+      /* flex-wrap: nowrap; = 기본값 */
       /* flex-wrap: wrap; */
+      /* 부모요소안에 다 들어갈 수 있게끔 감싸주기 */
 
+        /* justify-content = 주축 정렬 */
       /* justify-content: flex-start; */
-      /* justify-content: center; */
+      justify-content: center;
       /* justify-content: flex-end; */
 
       /* align-content: flex-start; */
-      /* align-content: center; */
+      align-content: center;
       /* align-content: flex-end; */
 
-      /* align-items: flex-start; */
+      align-items: flex-start;
       /* align-items: center; */
-      /* align-items: flex-end; */
+      /* align-items: flex-end;  */
     }
 
     .post {
@@ -39,11 +42,12 @@
     }
 
     .item1 {
-      /* align-self: center; */
+      align-self: center;
+      /* 개별로 행동 */
     }
 
     .item2 {
-      /* align-self: flex-end; */
+      align-self: flex-end;
     }
   </style>
 </head>
