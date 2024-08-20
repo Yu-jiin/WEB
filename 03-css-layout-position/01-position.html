@@ -15,7 +15,7 @@
     }
 
     .container {
-      /* position: relative; */
+      position: relative;
       height: 300px;
       width: 300px;
       border: 1px solid black;
@@ -28,29 +28,33 @@
     }
 
     .static {
-      /* position: static; */
+      position: static;
       background-color: lightcoral;
     }
 
     .absolute {
-      /* position: absolute; */
+      position: absolute;
+      /* position = normal flow 흐름 제거  */
+      /* absolute - 기준점 하나 잡고 자유롭게 움직임  */
+      /* 부모요소에 position relative 주면 됨 */
       background-color: lightgreen;
       top: 100px;
       left: 100px;
     }
 
     .relative {
-      /* position: relative; */
+      position: relative;
       background-color: lightblue;
       top: 100px;
       left: 100px;
     }
 
     .fixed {
-      /* position: fixed; */
+      position: fixed;
       background-color: gray;
       top: 0;
       right: 0;
+      /* 맨 오른 위로 이동 */
     }
   </style>
 </head>
