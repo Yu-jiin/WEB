@@ -17,36 +17,40 @@
 
 <body>
   <h2 class="text-center">Basic</h2>
-  <div class="">
-    <div class="">
-      <div class="box">col</div>
-      <div class="box">col</div>
-      <div class="box">col</div>
+  <div class="container">
+    <div class="row">
+      <div class="box col-4">col</div>
+      <div class="box col-4">col</div>
+      <div class="box col-4">col</div>
+      <!-- 4생략도 가능 그냥 똑같은 크기를 나눠줌 근데 권장 X -->
     </div>
-    <div class="">
-      <div class="box">col-4</div>
-      <div class="box">col-4</div>
-      <div class="box">col-4</div>
+    <div class="row">
+      <div class="box col-4">col-4</div>
+      <div class="box col-4">col-4</div>
+      <div class="box col-4">col-4</div>
     </div>
-    <div class="">
-      <div class="box">col-2</div>
-      <div class="box">col-8</div>
-      <div class="box">col-2</div>
+    <div class="row">
+      <div class="box col-2">col-2</div>
+      <div class="box col-8">col-8</div>
+      <div class="box col-2">col-2</div>
+      <!-- 12칸을 넘어가고 다음 행으로 넘어가버림 -->
     </div>
   </div>
 
   <hr>
 
   <h2 class="text-center">Nesting</h2>
-  <div class="">
-    <div class="">
-      <div class="box">col-4</div>
-      <div class="box">
-        <div class="">
-          <div class="box">col-6</div>
-          <div class="box">col-6</div>
-          <div class="box">col-6</div>
-          <div class="box">col-6</div>
+  <div class="container">
+    <div class="row">
+      <div class="box col-4">col-4</div>
+      <div class="box col-8">
+        <div class="row">
+          <div class="box col-6">col-6</div>
+          <div class="box col-6">col-6</div>
+          <div class="box col-6">col-6</div>
+          <div class="box col-6">col-6</div>
+          <!-- ctrl alt 화살표 개 씹유용 -->
+          <!-- ctrl + l 한 줄 선택  -->
         </div>
       </div>
     </div>
@@ -55,17 +59,17 @@
   <hr>
 
   <h2 class="text-center">Offset</h2>
-  <div class="">
-    <div class="">
-      <div class="box">col-4</div>
-      <div class="box">col-4 offset-4</div>
+  <div class="container">
+    <div class="row">
+      <div class="box col-4">col-4</div>
+      <div class="box col-4 offset-4">col-4 offset-4</div>
     </div>
-    <div class="">
-      <div class="box">col-3 offset-3</div>
-      <div class="box">col-3 offset-3</div>
+    <div class="row">
+      <div class="box col-3 offset-3">col-3 offset-3</div>
+      <div class="box col-3 offset-3">col-3 offset-3</div>
     </div>
-    <div class="">
-      <div class="box">col-6 offset-3</div>
+    <div class="row">
+      <div class="box col-6 offset-3">col-6 offset-3</div>
     </div>
   </div>
 
@@ -73,7 +77,7 @@
 
   <h2 class="text-center">Gutters(gx-0)</h2>
   <div class="container">
-    <div class="row">
+    <div class="row gx-0">
       <div class="col-6">
         <div class="box">col</div>
       </div>
@@ -87,7 +91,7 @@
 
   <h2 class="text-center">Gutters(gy-5)</h2>
   <div class="container">
-    <div class="row">
+    <div class="row gy-5">
       <div class="col-6">
         <div class="box">col</div>
       </div>
@@ -108,7 +112,7 @@
 
   <h2 class="text-center">Gutters(g-5)</h2>
   <div class="container">
-    <div class="row">
+    <div class="row g-5">
       <div class="col-6">
         <div class="box">col</div>
       </div>
