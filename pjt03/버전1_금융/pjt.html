@@ -11,6 +11,12 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
@@ -69,42 +75,138 @@
     <!-- end of page header -->
 
     <div class="container">
-      <section id="my-intro" class="my-intro">
+      <section id="my-intro" class="about scroll-offset">
         <div class="container text-center">
-          <!-- about wrapper -->
           <div class="about">
             <div class="about-img-holder">
               <img
-                src="assets/imgs/man.png"
+                src="./png-transparent-cartoon-cute-cartoon-cartoon-character-comics-blue-removebg-preview.png"
                 class="about-img"
-                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                style="width: 100%"
               />
             </div>
             <div class="about-caption">
-              <p class="section-subtitle">Who Am I ?</p>
-              <h2 class="section-title mb-3">About Me</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Repudiandae aliquid ad provident aut fuga animi soluta quae eos
-                non cupiditate voluptates dolorem, doloremque quos dicta
-                quibusdam impedit iure nemo a iste
-                <br />culpa! Quasi quibusdam hic recusandae delectus velit
-                officiis explicabo voluptatibus! Nemo esse similique, voluptates
-                labore distinctio, placeat explicabo facilis molestias,
-                blanditiis culpa iusto voluptatem ratione eligendi a, quia
-                temporibus velit vero ipsa sint ex voluptatum expedita aliquid!
-                Debitis, nam!
+              <p
+                class="section-subtitle display-5"
+                style="font-family: 'Baloo Paaji', cursive"
+              >
+                Who Am I ?
               </p>
-              <button class="btn-rounded btn btn-outline-primary mt-4">
-                Download CV
-              </button>
+              <h2
+                class="section-title mb-3 display-3"
+                style="font-family: 'Baloo Paaji', cursive"
+              >
+                About Me
+              </h2>
+              <p class="intro-myself">
+                🚀 안녕하세요! 저는 열정적인 프론트엔드 개발자 유지인입니다.
+                <br />
+                💻 React와 CSS를 활용하여 사용자 중심의 매력적인 웹
+                애플리케이션을 구축합니다.
+                <br />
+                🌟 Python을 주 언어로 삼아 강력한 백엔드 시스템과의 완벽한
+                통합을 자랑합니다.
+                <br />
+                ✨ 최고의 사용자 경험을 위해 최신 기술과 디자인 트렌드를
+                반영하여 항상 최상의 결과를 제공합니다.
+                <br />
+                🔧 웹 개발의 모든 도전에 맞서며, 끊임없는 학습과 혁신을 추구하는
+                전문가입니다.
+              </p>
             </div>
           </div>
-          <!-- end of about wrapper -->
         </div>
-        <!-- end of container -->
       </section>
-      <section id="skills" class="skills">skills</section>
+      <table class="table custom-table">
+        <thead>
+          <tr>
+            <th scope="row">👤 NAME</th>
+            <td>유지인</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">🎂 AGE</th>
+            <td>01.04.16</td>
+          </tr>
+          <tr>
+            <th scope="row">📞 TEL</th>
+            <td>010-4083-9114</td>
+          </tr>
+          <tr>
+            <th scope="row">📧 EMAIL</th>
+            <td colspan="2">jiin4083@naver.com</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="container">
+        <section id="skills" class="skills scroll-offset">
+          <div class="container text-center">
+            <p class="section-subtitle display-5">What I Do ?</p>
+            <h6 class="section-title mb-6 display-3">Skills</h6>
+            <!-- row -->
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <div class="service-card">
+                  <div class="body">
+                    <img
+                      src="./spring.png"
+                      alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                      class="icon"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <div class="service-card">
+                  <div class="body">
+                    <img
+                      src="assets/imgs/responsive.svg"
+                      alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                      class="icon"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <div class="service-card">
+                  <div class="body">
+                    <img
+                      src="assets/imgs/toolbox.svg"
+                      alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                      class="icon"
+                    />
+                    <h6 class="title">Placeat</h6>
+                    <p class="subtitle">
+                      Labore velit culpa adipisci excepturi consequuntur itaque
+                      in nam molestias dolorem iste quod.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <div class="service-card">
+                  <div class="body">
+                    <img
+                      src="assets/imgs/analytics.svg"
+                      alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                      class="icon"
+                    />
+                    <h6 class="title">Iusto</h6>
+                    <p class="subtitle">
+                      Labore velit culpa adipisci excepturi consequuntur itaque
+                      in nam molestias dolorem iste quod.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end of row -->
+          </div>
+        </section>
+      </div>
+
       <section id="project" class="project">project</section>
       <section id="contact" class="contact">contact</section>
       <footer class="footer">footer</footer>
