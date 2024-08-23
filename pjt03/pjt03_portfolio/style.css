@@ -121,7 +121,20 @@ nav {
 
 .about {
     display: flex;
+    /* flex-direction: column; */
     text-align: left;
+    align-items: center;
+}
+
+@media (max-width: 800px) {
+    .about {
+        flex-direction: column;
+    }
+}
+
+.about-img{
+  width: 100%;
+  height: auto;
 }
 
 .about-img-holder {
@@ -213,6 +226,7 @@ nav {
 
 .blog-card {
   display: flex;
+  flex-direction: row;
   text-align: left;
   border: 3px dotted #dee2e6;
   margin-bottom: 30px;
@@ -220,25 +234,24 @@ nav {
   overflow: hidden;
   margin-top: 30px;
   font-family: "Hahmlet", serif;
-  align-items: center;
 }
 
 .blog-card-header {
-  min-width: 350px;
-  max-width: 350px;
   display: flex;
+  width: 40%;
+  align-items: center;
   justify-content: center;
-  flex: 1;
-
 }
 
 .blog-card-img {
   width: 100%;
   height: auto;
   object-fit: cover;
+  
 }
 
 .blog-card-body {
+  width: 60%;
   padding: 30px 20px 30px 30px;
 }
 
